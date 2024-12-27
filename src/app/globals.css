@@ -5,15 +5,19 @@
 @tailwind utilities;
 
 :root {
-   --background: #F7F3F0;
+   --background: #f7f3f0;
    --foreground: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
    :root {
-      --background: #F7F3F0;
+      --background: #f7f3f0;
       --foreground: #000000;
    }
+}
+
+html {
+   scroll-behavior: smooth;
 }
 
 body {
@@ -25,5 +29,8 @@ body {
 
 .font-ogg-regular {
    font-family: var(--font-ogg-regular);
-   font-weight: 400;
+}
+
+.font-ogg-light {
+   font-family: var(--font-ogg-light);
 }

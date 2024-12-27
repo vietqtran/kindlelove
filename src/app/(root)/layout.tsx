@@ -8,10 +8,9 @@ interface Props {
 
 const RootLayout = ({ children }: Props) => {
    return (
-      <div className='w-full min-h-screen relative'>
-         <div id='portal'></div>
+      <div className='min-h-screen w-full'>
          <Header />
-         <main className='w-full max-w-[1440px] mx-auto p-4 mb-10'>
+         <main className='z-0 mx-auto mb-10 w-full max-w-[1440px] p-4 pt-20 xl:pt-[116px]'>
             {children}
          </main>
          <Footer />

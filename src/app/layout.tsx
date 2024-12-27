@@ -13,6 +13,11 @@ const oggRegular = localFont({
    src: '/fonts/Ogg-Regular.otf'
 })
 
+const oggLight = localFont({
+   variable: '--font-ogg-light',
+   src: '/fonts/Ogg-Light.otf'
+})
+
 export const metadata: Metadata = {
    title: 'Kindle Love',
    description:
@@ -27,7 +32,7 @@ export default function RootLayout({
    return (
       <html lang='en'>
          <body
-            className={`${montserrat.variable} ${oggRegular.variable} antialiased`}
+            className={`${montserrat.variable} ${oggRegular.variable} ${oggLight.variable} antialiased`}
          >
             {children}
          </body>

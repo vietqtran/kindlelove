@@ -14,10 +14,10 @@ const Header = () => {
    }, [pathname])
 
    return (
-      <header className='w-full border-b h-14 md:h-16 lg:h-20 xl:h-[116px] border-b-black'>
-         <div className='xl:py-10 lg:px-[40px] md:px-[30px] xl:px-[60px] max-w-[1440px] size-full mx-auto'>
-            <div className='flex relative justify-between items-center size-full'>
-               <div className='md:flex hidden items-center lg:gap-[40px] xl:gap-[50px]'>
+      <header className='fixed inset-x-0 top-0 z-[99999] h-14 w-full border-b border-b-black bg-[var(--background)] md:h-16 lg:h-20 xl:h-[116px]'>
+         <div className='mx-auto size-full max-w-[1440px] md:px-[30px] lg:px-[40px] xl:px-[60px] xl:py-10'>
+            <div className='relative flex size-full items-center justify-between'>
+               <div className='hidden items-center md:flex lg:gap-[40px] xl:gap-[50px]'>
                   <Link
                      href={'/shop'}
                      className={`${
@@ -43,10 +43,10 @@ const Header = () => {
                      CONTACT
                   </Link>
                </div>
-               <div className='md:flex hidden h-full items-center gap-[50px]'>
-                  <div className='text-center cursor-pointer hover:font-semibold'>
+               <div className='hidden h-full items-center gap-[50px] md:flex'>
+                  <div className='cursor-pointer text-center hover:font-semibold'>
                      <Image
-                        className='min-w-6 min-h-6'
+                        className='min-h-6 min-w-6'
                         src={'/images/icons/search.svg'}
                         width={24}
                         height={24}
@@ -54,9 +54,9 @@ const Header = () => {
                         loading='lazy'
                      />
                   </div>
-                  <div className='text-center cursor-pointer hover:font-semibold'>
+                  <div className='cursor-pointer text-center hover:font-semibold'>
                      <Image
-                        className='min-w-6 min-h-6'
+                        className='min-h-6 min-w-6'
                         src={'/images/icons/cart.svg'}
                         width={24}
                         height={24}
@@ -64,9 +64,9 @@ const Header = () => {
                         loading='lazy'
                      />
                   </div>
-                  <div className='text-center cursor-pointer hover:font-semibold'>
+                  <div className='cursor-pointer text-center hover:font-semibold'>
                      <Image
-                        className='min-w-6 min-h-6'
+                        className='min-h-6 min-w-6'
                         src={'/images/icons/profile.svg'}
                         width={24}
                         height={24}
@@ -77,10 +77,10 @@ const Header = () => {
                </div>
                <div
                   onClick={() => setIsOpenMenu(true)}
-                  className='md:hidden p-4 text-center cursor-pointer hover:font-semibold'
+                  className='cursor-pointer p-4 text-center hover:font-semibold md:hidden'
                >
                   <Image
-                     className='min-w-6 min-h-6'
+                     className='min-h-6 min-w-6'
                      src={'/images/icons/menu.svg'}
                      width={24}
                      height={24}
@@ -88,9 +88,9 @@ const Header = () => {
                      loading='lazy'
                   />
                </div>
-               <div className='md:hidden p-4 text-center cursor-pointer hover:font-semibold'>
+               <div className='cursor-pointer p-4 text-center hover:font-semibold md:hidden'>
                   <Image
-                     className='min-w-6 min-h-6'
+                     className='min-h-6 min-w-6'
                      src={'/images/icons/cart.svg'}
                      width={24}
                      height={24}
@@ -100,9 +100,9 @@ const Header = () => {
                </div>
                <Link
                   href={'/'}
-                  className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+                  className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'
                >
-                  <h2 className='font-bold text-2xl xl:text-[40px] lg:text-4xl text-[#503101]'>
+                  <h2 className='text-2xl font-bold text-[#503101] lg:text-4xl xl:text-[40px]'>
                      KindleLove
                   </h2>
                </Link>
@@ -113,7 +113,7 @@ const Header = () => {
             {isOpenMenu && (
                <div
                   onClick={() => setIsOpenMenu(false)}
-                  className='fixed w-screen h-screen inset-0 bg-black/50'
+                  className='fixed inset-0 z-10 h-screen w-screen bg-black/50'
                >
                   <motion.div
                      initial={{ x: '-100%' }}
@@ -121,14 +121,14 @@ const Header = () => {
                      exit={{ x: '-100%' }}
                      transition={{ duration: 0.2 }}
                      onClick={(e) => e.stopPropagation()}
-                     className='h-full relative w-[300px] bg-[var(--background)]'
+                     className='relative h-full w-[300px] bg-[var(--background)]'
                   >
                      <div
                         onClick={() => setIsOpenMenu(false)}
-                        className='absolute p-2 top-0 right-0 z-10 cursor-pointer'
+                        className='absolute right-0 top-0 z-10 cursor-pointer p-2'
                      >
                         <Image
-                           className='min-w-6 min-h-6'
+                           className='min-h-6 min-w-6'
                            src={'/images/icons/close.svg'}
                            width={32}
                            height={32}
@@ -136,7 +136,7 @@ const Header = () => {
                            loading='lazy'
                         />
                      </div>
-                     <div className='size-full relative py-10'>
+                     <div className='relative size-full py-10'>
                         <div className='w-full'>
                            <Link
                               href={'/shop'}

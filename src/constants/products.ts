@@ -12,7 +12,8 @@ export const products = [
          do_ur_zest: 'sour, cool (lemon, cypress, ..)',
          crown_up: 'sweet, feminine',
          flaw_some: 'sweet, cool'
-      }
+      },
+      category: 1
    },
    {
       id: 2,
@@ -27,7 +28,8 @@ export const products = [
          do_ur_zest: 'sour, cool (lemon, cypress, ..)',
          crown_up: 'sweet, feminine',
          flaw_some: 'sweet, cool'
-      }
+      },
+      category: 1
    },
    {
       id: 3,
@@ -42,7 +44,8 @@ export const products = [
          do_ur_zest: 'sour, cool (lemon, cypress, ..)',
          crown_up: 'sweet, feminine',
          flaw_some: 'sweet, cool'
-      }
+      },
+      category: 2
    },
    {
       id: 4,
@@ -57,7 +60,8 @@ export const products = [
          do_ur_zest: 'sour, cool (lemon, cypress, ..)',
          crown_up: 'sweet, feminine',
          flaw_some: 'sweet, cool'
-      }
+      },
+      category: 4
    },
    {
       id: 5,
@@ -72,7 +76,8 @@ export const products = [
          do_ur_zest: 'sour, cool (lemon, cypress, ..)',
          crown_up: 'sweet, feminine',
          flaw_some: 'sweet, cool'
-      }
+      },
+      category: 5
    },
    {
       id: 6,
@@ -87,7 +92,8 @@ export const products = [
          do_ur_zest: 'sour, cool (lemon, cypress, ..)',
          crown_up: 'sweet, feminine',
          flaw_some: 'sweet, cool'
-      }
+      },
+      category: 5
    }
 ]
 
@@ -105,7 +111,8 @@ export const home_menu_products = [
          do_ur_zest: 'sour, cool (lemon, cypress, ..)',
          crown_up: 'sweet, feminine',
          flaw_some: 'sweet, cool'
-      }
+      },
+      category: 1
    },
    {
       id: 2,
@@ -120,7 +127,8 @@ export const home_menu_products = [
          do_ur_zest: 'sour, cool (lemon, cypress, ..)',
          crown_up: 'sweet, feminine',
          flaw_some: 'sweet, cool'
-      }
+      },
+      category: 1
    },
    {
       id: 3,
@@ -135,7 +143,8 @@ export const home_menu_products = [
          do_ur_zest: 'sour, cool (lemon, cypress, ..)',
          crown_up: 'sweet, feminine',
          flaw_some: 'sweet, cool'
-      }
+      },
+      category: 5
    },
    {
       id: 4,
@@ -150,6 +159,35 @@ export const home_menu_products = [
          do_ur_zest: 'sour, cool (lemon, cypress, ..)',
          crown_up: 'sweet, feminine',
          flaw_some: 'sweet, cool'
-      }
+      },
+      category: 4
+   }
+]
+
+export const categories = [
+   {
+      id: 1,
+      name: 'size_m',
+      text: 'Size M'
+   },
+   {
+      id: 2,
+      name: 'size_l',
+      text: 'Size L'
+   },
+   {
+      id: 3,
+      name: 'limited_edition',
+      text: 'Limited Edition'
+   },
+   {
+      id: 4,
+      name: 'combo_gift_set',
+      text: 'Combo Gift Set'
+   },
+   {
+      id: 5,
+      name: 'candle_tool_set',
+      text: 'Candle Tool Set'
    }
 ]
