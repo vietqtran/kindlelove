@@ -15,6 +15,7 @@ export default function ShopPage() {
       ? products
       : products.filter((p) => p.category == currentCategory);
   }, [currentCategory]);
+
   return (
     <div className="z-0 flex flex-col gap-2 space-y-2 lg:px-10 lg:py-10">
       <div className="flex w-full items-center justify-start gap-3 text-left">
@@ -103,9 +104,14 @@ export default function ShopPage() {
         </h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 xl:grid-cols-4">
           {products
-            .filter((p) =>
-              JSON.parse(localStorage.getItem("recent") ?? "[]").includes(p.id)
-            )
+            .filter((p) => {
+              if (typeof window === "undefined") {
+                return p;
+              }
+              return JSON.parse(
+                localStorage.getItem("recent") ?? "[]"
+              ).includes(p.id);
+            })
             .map((p) => {
               return (
                 <Link
