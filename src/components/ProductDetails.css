@@ -1,0 +1,148 @@
+.product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  margin: 0;
+}
+
+.product-price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+  margin: 0;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+}
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid #000000;
+  padding: 4px 8px;
+  gap: 1px;
+  height: 39px;
+  width: 88px;
+}
+
+.quantity-btn {
+  font-family: "Ogg TRIAL", serif;
+  font-size: 20px;
+  color: #503101;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.quantity-display {
+  font-family: "Ogg TRIAL", serif;
+  font-size: 20px;
+  color: #503101;
+  text-align: center;
+  flex: 1;
+}
+
+.add-to-cart-btn {
+  font-family: "Ogg TRIAL", serif;
+  font-size: 20px;
+  color: #503101;
+  background: none;
+  border: 0.5px solid #503101;
+  padding: 4px 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 285px;
+  height: 39px;
+}
+
+.product-specs {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+
+.product-specs p {
+  margin: 0 0 10px 0;
+}
+
+.size-text {
+  margin-top: 20px !important;
+}
+
+@font-face {
+  font-family: "Ogg TRIAL";
+  src: local("Ogg TRIAL");
+}
+
+@media (min-width: 768px) {
+  .product-container {
+    flex-direction: row;
+  }
+
+  .product-info {
+    flex-direction: column;
+    max-width: 640px;
+  }
+
+  .product-header {
+    gap: 24px;
+  }
+
+  .product-title,
+  .product-price {
+    font-size: 32px;
+  }
+
+  .product-actions {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .add-to-cart-btn {
+    width: 285px;
+  }
+}
