@@ -2,9 +2,10 @@
 
 import "./ProductDetails.css";
 
+import React, { useEffect } from "react";
+
 import Button from "./common/Button";
 import Image from "next/image";
-import React from "react";
 
 interface ProductDetailsProps {
   title?: string;
@@ -18,6 +19,7 @@ interface ProductDetailsProps {
   image?: string;
   name?: string;
   gif?: string;
+  id?: number;
 }
 
 const ProductDetails: React.FC<ProductDetailsProps> = ({
@@ -31,8 +33,17 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
   image = "",
   name = "",
   gif = "",
+  id = 0,
 }) => {
   const [quantity, setQuantity] = React.useState(1);
+  useEffect(() => {
+    const recentItems = JSON.parse(localStorage.getItem("recent") ?? "[]");
+    const recentArray = Array.isArray(recentItems) ? recentItems : [];
+    if (recentArray.includes(id)) {
+      recentArray.splice(recentArray.indexOf(id), 1);
+    }
+    localStorage.setItem("recent", JSON.stringify([id, ...recentArray]));
+  }, [id]);
   return (
     <div className="w-full grid gap-10 grid-cols-1 lg:grid-cols-2">
       <div className="product-image">

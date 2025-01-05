@@ -45,7 +45,7 @@ export const products = [
       crown_up: "sweet, feminine",
       flaw_some: "sweet, cool",
     },
-    category: 2,
+    category: 3,
   },
   {
     id: 4,
@@ -144,7 +144,7 @@ export const home_menu_products = [
       crown_up: "sweet, feminine",
       flaw_some: "sweet, cool",
     },
-    category: 5,
+    category: 3,
   },
   {
     id: 4,

@@ -12,6 +12,7 @@ export default async function Home({
 }>) {
   const { id } = await params;
   const product = products.find((p) => p.id === Number(id));
+
   return (
     <div className="z-0 flex flex-col gap-20 lg:px-10 lg:py-16">
       <ProductDetails
@@ -26,6 +27,7 @@ export default async function Home({
         image={product?.image}
         name={product?.name}
         gif={product?.gif}
+        id={product?.id}
       />
       <div className="w-full">
         <h2 className="font-ogg-regular mb-10 tracking-wider ~text-3xl/5xl">
