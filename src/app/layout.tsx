@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
+import ChatBot from '@/components/common/ChatBot'
 
 const montserrat = Montserrat({
    variable: '--font-montserrat-sans',
@@ -35,6 +36,7 @@ export default function RootLayout({
             className={`${montserrat.variable} ${oggRegular.variable} ${oggLight.variable} antialiased`}
          >
             {children}
+            <ChatBot />
          </body>
       </html>
    )
