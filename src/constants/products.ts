@@ -51,7 +51,7 @@ export const products = [
       id: 4,
       name: 'Combo Gift Set',
       gif: 'Iincludes Gift box, ribbon, user manual, matches, card, decorative flowers, candle wick & bag + candle size M',
-      price: 229000,
+      price: 59000,
       image: '/images/products/p4.png',
       attrs: {
          burning_time: '100 hours',
@@ -150,7 +150,7 @@ export const home_menu_products = [
       id: 4,
       name: 'COMBO GIFT SET',
       gif: 'Iincludes Gift box, ribbon, user manual, matches, card, decorative flowers, candle wick & bag + candle size M',
-      price: 229000,
+      price: 59000,
       image: '/images/products/p4.png',
       attrs: {
          burning_time: '100 hours',
@@ -197,7 +197,7 @@ export const alsoLike = [
       id: 4,
       name: 'COMBO GIFT SET',
       gif: 'Iincludes Gift box, ribbon, user manual, matches, card, decorative flowers, candle wick & bag + candle size M',
-      price: 229000,
+      price: 59000,
       image: '/images/products/p4.png',
       attrs: {
          burning_time: '100 hours',
@@ -213,7 +213,7 @@ export const alsoLike = [
       id: 5,
       name: 'Candle Tool set',
       gif: 'Includes: candle wick scissors, tray, candle cap, candle wick cleaning stick',
-      price: 229000,
+      price: 99000,
       image: '/images/products/p5.png',
       attrs: {
          burning_time: '100 hours',
@@ -245,7 +245,7 @@ export const alsoLike = [
       id: 6,
       name: 'Print hidden message',
       gif: 'Applicable to all products',
-      price: 229000,
+      price: 19000,
       image: '/images/products/p6.png',
       attrs: {
          burning_time: '100 hours',
