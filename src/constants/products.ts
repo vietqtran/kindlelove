@@ -67,7 +67,7 @@ export const products = [
       id: 5,
       name: 'Candle Tool set',
       gif: 'Includes: candle wick scissors, tray, candle cap, candle wick cleaning stick',
-      price: 229000,
+      price: 59000,
       image: '/images/products/p5.png',
       attrs: {
          burning_time: '100 hours',
@@ -213,7 +213,7 @@ export const alsoLike = [
       id: 5,
       name: 'Candle Tool set',
       gif: 'Includes: candle wick scissors, tray, candle cap, candle wick cleaning stick',
-      price: 99000,
+      price: 59000,
       image: '/images/products/p5.png',
       attrs: {
          burning_time: '100 hours',
