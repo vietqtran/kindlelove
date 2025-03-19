@@ -25,7 +25,9 @@ export default function Home() {
             <h2 className="font-ogg-regular text-6xl tracking-wide sm:text-7xl lg:text-8xl">
               Collection
             </h2>
+            <Link href="/shop">
             <Button title="SHOP NOW" icon="arrow" />
+            </Link>
           </div>
         </div>
       </div>
