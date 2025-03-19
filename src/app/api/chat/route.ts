@@ -109,7 +109,104 @@ export async function POST(request: NextRequest) {
                         Khách hàng tự tay làm nến, chọn mùi hương, và thêm thông điệp ẩn, tạo trải nghiệm gắn kết với thương hiệu.
                         Kết luận
                         Nến thơm KindleLove không chỉ là một sản phẩm trang trí hay thư giãn mà còn là một món quà tinh thần đầy ý nghĩa. Với thông điệp ẩn cá nhân hóa, công nghệ NFC hiện đại, vật liệu tự nhiên an toàn, và chiến lược bán hàng linh hoạt, sản phẩm nhắm đến giới trẻ yêu thích sự sáng tạo và kết nối. Các chương trình khách hàng thân thiết và sáng kiến bền vững như tái chế càng làm tăng giá trị của KindleLove, biến nó thành lựa chọn lý tưởng cho cả sử dụng cá nhân lẫn làm quà tặng. Nếu bạn cần thêm thông tin chi tiết hơn về bất kỳ phần nào, hãy cho tôi biết nhé!
-                    
+                     [
+   {
+      id: 1,
+      name: 'Size M',
+      gif: 'with free paper box + bag',
+      price: 229000,
+      image: '/images/products/p1.png',
+      attrs: {
+         burning_time: '100 hours',
+         sleep_tight: 'main tone is pine wood, warm',
+         weight: '500g',
+         do_ur_zest: 'sour, cool (lemon, cypress, ..)',
+         crown_up: 'sweet, feminine',
+         flaw_some: 'sweet, cool'
+      },
+      category: 1
+   },
+   {
+      id: 2,
+      name: 'Size M',
+      gif: 'with free paper box + bag + matches',
+      price: 229000,
+      image: '/images/products/p2.png',
+      attrs: {
+         burning_time: '100 hours',
+         sleep_tight: 'main tone is pine wood, warm',
+         weight: '500g',
+         do_ur_zest: 'sour, cool (lemon, cypress, ..)',
+         crown_up: 'sweet, feminine',
+         flaw_some: 'sweet, cool'
+      },
+      category: 1
+   },
+   {
+      id: 3,
+      name: 'LIMITED EDITION',
+      gif: 'Christmas Sandalwood',
+      price: 229000,
+      image: '/images/products/p3.png',
+      attrs: {
+         burning_time: '100 hours',
+         sleep_tight: 'main tone is pine wood, warm',
+         weight: '500g',
+         do_ur_zest: 'sour, cool (lemon, cypress, ..)',
+         crown_up: 'sweet, feminine',
+         flaw_some: 'sweet, cool'
+      },
+      category: 3
+   },
+   {
+      id: 4,
+      name: 'Combo Gift Set',
+      gif: 'Iincludes Gift box, ribbon, user manual, matches, card, decorative flowers, candle wick & bag + candle size M',
+      price: 59000,
+      image: '/images/products/p4.png',
+      attrs: {
+         burning_time: '100 hours',
+         sleep_tight: 'main tone is pine wood, warm',
+         weight: '500g',
+         do_ur_zest: 'sour, cool (lemon, cypress, ..)',
+         crown_up: 'sweet, feminine',
+         flaw_some: 'sweet, cool'
+      },
+      category: 4
+   },
+   {
+      id: 5,
+      name: 'Candle Tool set',
+      gif: 'Includes: candle wick scissors, tray, candle cap, candle wick cleaning stick',
+      price: 229000,
+      image: '/images/products/p5.png',
+      attrs: {
+         burning_time: '100 hours',
+         sleep_tight: 'main tone is pine wood, warm',
+         weight: '500g',
+         do_ur_zest: 'sour, cool (lemon, cypress, ..)',
+         crown_up: 'sweet, feminine',
+         flaw_some: 'sweet, cool'
+      },
+      category: 5
+   },
+   {
+      id: 6,
+      name: 'Print hidden message',
+      gif: 'Applicable to all products',
+      price: 229000,
+      image: '/images/products/p6.png',
+      attrs: {
+         burning_time: '100 hours',
+         sleep_tight: 'main tone is pine wood, warm',
+         weight: '500g',
+         do_ur_zest: 'sour, cool (lemon, cypress, ..)',
+         crown_up: 'sweet, feminine',
+         flaw_some: 'sweet, cool'
+      },
+      category: 5
+   }
+] đây là sản phẩm nhưng khi phản hồi hãy tự do phân tích thêm mắm thêm muối nếu khách hàng muốn hỏi mua
 
                         Trên đây là toàn bộ thông tin mà bạn cần để trả lời khách hàng nếu họ hỏi gì đó.
                         Nếu khách hàng hỏi bằng tiếng anh, bạn có thể dùng ngôn ngữ tiếng anh để trả lời, còn hỏi bằng tiếng Việt thì hãy trả lời bằng tiếng Việt.
