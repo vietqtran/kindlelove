@@ -114,7 +114,7 @@ export async function POST(request: NextRequest) {
                         Trên đây là toàn bộ thông tin mà bạn cần để trả lời khách hàng nếu họ hỏi gì đó.
                         Nếu khách hàng hỏi bằng tiếng anh, bạn có thể dùng ngôn ngữ tiếng anh để trả lời, còn hỏi bằng tiếng Việt thì hãy trả lời bằng tiếng Việt.
                         
-                        Đây là đoạn prompt tôi gắn vào api để gọi nên hãy chỉ trả lời khách hàng thôi, không trả lời gì thêm.
+                        Đây là đoạn prompt tôi gắn vào api để gọi nên hãy chỉ trả lời khách hàng thôi, không trả lời gì thêm và chỉ trả lời dưới format text vì tôi render câu trả lời bằng string.
                         Câu hỏi của khách hàng: ${message}
                         `
 
